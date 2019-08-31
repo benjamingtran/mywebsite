@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "homepage": "https://benjamingtran.github.io/mywebsite",
-  "about": "https://benjamingtran.github.io/mywebsite/about",
   "dependencies": {
     "gh-pages": "^2.1.1"
   }
