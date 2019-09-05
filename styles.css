@@ -4,10 +4,101 @@ h1 {
     font-weight: bold;
     color: aqua;
 }
-.sidebar{
-    width: 320px;
-    padding: 10px;
-    border: 5px solid gray;
-    margin: 0;
+body, html {
+    height: 100%;
+}
 
+.backimage{
+    height: 100%;
+    background-image: url('./images/seattle-skyline-dawn.jpg');
+    border: none;
+    position: relative;
+    opacity: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+
+}
+#txt{
+color: #FFFFFF;
+
+}
+#date{
+    color: #FFFFFF;
+}
+.time{
+
+    width:200px;
+    height: 30px;
+    border: none;
+    align-items: center;
+    position: relative;
+    top: 48%;
+    left: 42%;
+    font-style: inherit;
+    font-weight: bold;
+    display: flex;
+
+    text-shadow:
+            -2px -2px 0 #01cdfe,
+            1px -1px 0 #000000,
+            -2px 2px 0 #ff71ce,
+            1px 1px 0 #000000;
+
+
+}
+.time #txt{
+    font-size: 50px;
+
+
+}
+.date{
+    width:200px;
+    height: 30px;
+    border: none;
+    align-items: center;
+    position: relative;
+    top: 52%;
+    left: 32%;
+    font-style: inherit;
+    font-weight: bold;
+    display: flex;
+
+    text-shadow:
+            -1px -1px 0 #01cdfe,
+            1px -1px 0 #000000,
+            -1px 1px 0 #000000,
+            1px 1px 0 #000000;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+#sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #1a1b21;
+    left: -200px;
+    transition: all 400ms linear;
+}
+#sidebar.active{
+    left: 0px;
+}
+#sidebar ul li{
+    text-align: center;
+    list-style: none;
+    color: #01cdfe;
+    padding: 15px 10px;
+    border-bottom: 2px solid #ff71ce;
+}
+#sidebar .hammenu{
+    top: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 230px;
 }

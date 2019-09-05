@@ -3,15 +3,33 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-16x16.png">
     <title>csbent</title>
 </head>
-<body>
-<h1>Welcome To my Page</h1>
-<h1>Hello Friends</h1>
-<div class="sidebar">
-<h1>Home</h1>
+<div class="backimage">
+<body onload="startTime()">
+<div class="icons"></div>
+<div id="sidebar">
+    <div class = "hammenu" onclick="toggleMenu()">
+    <h1 style="color: #01cdfe;">&#9776</h1>
+    </div>
+    <br>
+    <ul>
+    <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
 </div>
-<a href="https://google.com">Click Here</a>
-<a href="./About.html">about</a>
+<div class= "time">
+    <h1 id="txt"></h1>
+</div>
+    <div class = "date">
+    <h3 id="date"></h3>
+    </div>
+
+
 </body>
+</div>
 </html>
+<script src="./client.js"></script>
