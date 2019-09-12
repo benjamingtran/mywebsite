@@ -4,7 +4,7 @@ function startTime() {
     var m = today.getMinutes();
     var s = today.getSeconds();
     var month = today.getMonth();
-    var day = today.getDay() + 1;
+    var day = today.getDate();
     var year = today.getFullYear();
     month = displayMonth(month);
     var date = month +" "+ day +", " + year;

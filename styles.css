@@ -36,7 +36,7 @@ color: #FFFFFF;
     align-items: center;
     position: relative;
     top: 48%;
-    left: 42%;
+    left: 35%;
     font-style: inherit;
     font-weight: bold;
     display: flex;
@@ -54,6 +54,30 @@ color: #FFFFFF;
 
 
 }
+.GithubLogo{
+    position: relative;
+    left: 90%;
+    top: 32px;
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+}
+.Linkedin{
+    position: relative;
+    left: 90%;
+    top: 32px;
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+}
+.email{
+    position: relative;
+    left: 90%;
+    top: 32px;
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+}
 .date{
     width:200px;
     height: 30px;
@@ -61,7 +85,7 @@ color: #FFFFFF;
     align-items: center;
     position: relative;
     top: 52%;
-    left: 32%;
+    left: 24%;
     font-style: inherit;
     font-weight: bold;
     display: flex;
@@ -101,4 +125,28 @@ color: #FFFFFF;
     cursor: pointer;
     position: absolute;
     left: 230px;
+}
+a:after{
+    content: none;
+}
+a:link {
+    text-decoration: none;
+    color: #01cdfe;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: #01cdfe;
 }
