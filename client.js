@@ -10,6 +10,8 @@ function startTime() {
     var date = month +" "+ day +", " + year;
     m = checkTime(m);
     s = checkTime(s);
+    h = displayHour(h);
+    h =  checkTime(h);
     document.getElementById('txt').innerHTML =
         h + ":" + m + ":" + s;
     document.getElementById('date').innerHTML =
@@ -22,32 +24,44 @@ function checkTime(i) {
 }
 function displayMonth(month){
     switch (month) {
-        case 1:
+        case 0:
             return "January";
-        case 2:
+        case 1:
             return "February";
-        case 3:
+        case 2:
             return "March";
-        case 4:
+        case 3:
             return "April";
-        case 5:
+        case 4:
             return "May";
-        case 6:
+        case 5:
             return "June";
-        case 7:
+        case 6:
             return "July";
-        case 8:
+        case 7:
             return "August";
-        case 9:
+        case 8:
             return "September";
-        case 10:
+        case 9:
             return "October";
-        case 11:
+        case 10:
             return "November";
-        case 12:
+        case 11:
             return "December";
     }
 }
+function displayHour(hour){
+    if(hour > 12 || hour == 0){
+    switch (hour) {
+        case 0:
+            return 12;
+        default:
+            return hour - 12;
+    }
+}
+return hour;
+}
+
 function toggleMenu()
 {
     document.getElementById("sidebar").classList.toggle("active");
